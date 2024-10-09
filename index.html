@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Benefits of Using Scripts in cPanel">
+    <meta property="og:image" content="hyipscript.png">
+    <title>Download and instll inverment script</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .download-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        .big-button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+
+        }
+        .big-button:hover {
+            background-color: #218838;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Download and Install Investment script</h1>
+<button class="big-button" id="download-now">Download Now</button>
+
+<img src="hyipscript.png" alt="Script Demo Image"> <!-- Replace with your image URL -->
+
+<p>Installing a script in cPanel simplifies web development by providing a template that reduces coding time. You can quickly set up a functional website without starting from scratch.</p>
+
+<p>To install a script, go to the "Software" section in cPanel, select "Softaculous Apps Installer," and follow the instructions. Ensure compatibility with your hosting environment and read the documentation.</p>
+
+<p><a href="#" id="install-link">Click here to learn more about installation!</a></p>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <p>Would you like to install this script?</p>
+        <button class="download-button" id="download-script">Download Script</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<div>
+    <button class="download-button" onclick="openLink(1)">Download Script 1</button>
+    <button class="download-button" onclick="openLink(2)">Download Script 2</button>
+    <button class="download-button" onclick="openLink(3)">Download Script 3</button>
+    <button class="download-button" onclick="openLink(4)">Download Script 4</button>
+    <button class="download-button" onclick="openLink(5)">Download Script 5</button>
+</div>
+
+<script>
+    document.getElementById('install-link').onclick = function(event) {
+        event.preventDefault();
+        document.getElementById('popup').style.display = 'flex';
+    };
+
+    document.getElementById('download-now').onclick = function() {
+        window.open('https://downloadscript.com', '_blank');
+    };
+
+    document.getElementById('download-script').onclick = function() {
+        window.open('https://downloadscript.com', '_blank');
+        closePopup();
+    };
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    function openLink(scriptNumber) {
+        const downloadLinks = [
+            'https://downloadscript.com/script1',
+            'https://downloadscript.com/script2',
+            'https://downloadscript.com/script3',
+            'https://downloadscript.com/script4',
+            'https://downloadscript.com/script5'
+        ];
+        
+        // Open links in separate tabs
+        window.open(downloadLinks[scriptNumber - 1], '_blank');
+        window.open(downloadLinks[scriptNumber - 1], '_blank');
+        window.open(downloadLinks[scriptNumber - 1], '_blank');
+    }
+</script>
+
+</body>
+</html>
